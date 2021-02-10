@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carteira Virtual</title>
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+ <section class="conteudo">
+  <section class="dados">
+    
+    <section class="despesa-total">
+      <h2>Despesas</h2>
+      <section class="despesa">
+        <label>Despesa:</label>
+        <input class="despesas" id="despesa"  maxlength="15">
+      </section>
+      
+      <section class='valor-despesa'>
+        <label>Valor:</label>
+        <input class="valor-gasto" id="valorGasto"  maxlength="11">
+      </section>
+      
+      <button class='button-despesa' onclick="criarListaDespesa()">Adicionar Despesa</button> 
+    </section>
+    
+    
+    <section class="receita-total">
+      <h2>Receitas</h2>
+      <section class="receita">
+        <label>Receita:</label>
+        <input class="receita" id="receita" maxlength="15">
+
+      </section>
+
+      <section class="valor-recebido">
+        <label>Valor:</label>
+        <input class="valor-recebido" id="receitaRecebido" maxlength="11" >
+      </section>
+      
+      <button class='button-receita' onclick="criarListaReceita()">Adicionar Receita</button> 
+    </section>
+    
+  </section> 
+
+    <section class="inclusao">
+      
+      <section class="inclusao-despesa">
+        <div class="resultado-despesa">
+          <ul id='listaDespesas'></ul>
+        </div>
+
+        <div  class="resultado-gasto">
+          <ul id='listaValoresGasto'></ul>
+        </div>
+
+      </section>
+
+      <section class="inclusao-receita">
+
+        <div class="resultado-receita">
+          <ul id='listaReceita'></ul>
+        </div>
+
+      <div class="resultado-valor">
+        <ul id='listaValorRecebido'>
+          
+        </ul>
+      </div>
+      
+      </section> 
+      
+
+    </section> 
+
+    
+  </section>    
+  
+ 
+  
+
+
+ 
+  <script src="scripts/script.js"></script>
+</body>
+</html>
